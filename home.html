@@ -1,0 +1,220 @@
+﻿
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERO — Home</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 50% 40%, #102d55, #071326 50%, #030812);
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(#1b5a9520 1px, transparent 1px),
+        linear-gradient(90deg, #1b5a9520 1px, transparent 1px);
+    background-size: 45px 45px;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    pointer-events: none;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.logo {
+    font-size: clamp(65px, 12vw, 115px);
+    font-weight: 900;
+    letter-spacing: 18px;
+    color: #e8f5ff;
+    text-shadow:
+        0 0 10px #168cff,
+        0 0 35px #168cff,
+        0 0 75px #0875d5;
+}
+
+.tagline {
+    color: #78bfff;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 55px;
+}
+
+.search {
+    display: flex;
+    width: min(650px, 90vw);
+    height: 62px;
+    border: 1px solid #2875bd;
+    background: #091a31dd;
+    border-radius: 12px;
+    box-shadow: 0 0 30px #0875d533;
+    overflow: hidden;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+.search input::placeholder {
+    color: #7595b9;
+}
+
+.search button {
+    width: 65px;
+    background: linear-gradient(135deg, #168cff, #45c4ff);
+    border: none;
+    color: #04101f;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    filter: brightness(1.2);
+}
+
+.clock {
+    margin-top: 45px;
+    font-size: 44px;
+    font-weight: bold;
+    color: #c5e5ff;
+    text-shadow: 0 0 20px #168cff;
+}
+
+.date {
+    margin-top: 8px;
+    color: #719cc5;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.links a {
+    padding: 14px 22px;
+    border: 1px solid #1c4773;
+    background: #0b1d35;
+    color: #9bcaff;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: .2s;
+}
+
+.links a:hover {
+    border-color: #45baff;
+    color: white;
+    box-shadow: 0 0 20px #168cff55;
+    transform: translateY(-3px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    color: #49698d;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">ZERO</div>
+    <div class="tagline">THE FUTURE STARTS HERE</div>
+
+    <form class="search" id="searchForm">
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="Search the web or enter an address..."
+            autocomplete="off"
+        >
+        <button type="submit">⌕</button>
+    </form>
+
+    <div class="clock" id="clock">00:00</div>
+    <div class="date" id="date"></div>
+
+    <div class="links">
+        <a href="https://www.youtube.com">YouTube</a>
+        <a href="https://www.wikipedia.org">Wikipedia</a>
+        <a href="https://github.com">GitHub</a>
+    </div>
+
+    <div class="footer">ZERO BROWSER · VERSION 0.2</div>
+
+</div>
+
+<script>
+function updateClock() {
+    const now = new Date();
+
+    document.getElementById("clock").textContent =
+        now.toLocaleTimeString("uk-UA", {
+            hour: "2-digit",
+            minute: "2-digit"
+        });
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString("uk-UA", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+document.getElementById("searchForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const query = document.getElementById("searchInput").value.trim();
+
+    if (!query) return;
+
+    window.location.href =
+        "https://duckduckgo.com/?q=" + encodeURIComponent(query);
+});
+</script>
+
+</body>
+</html>

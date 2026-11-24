@@ -1,0 +1,136 @@
+{
+  "queries": {
+    "путон": {
+      "count": 3,
+      "result_urls": {
+        "https://science.nasa.gov/solar-system/": 2,
+        "https://www.nasa.gov/": 2,
+        "https://www.nasa.gov/news/": 2,
+        "https://www.nasa.gov/2026-news-releases/": 2,
+        "https://www.nasa.gov/news/recently-published/": 2,
+        "https://plus.nasa.gov/series/": 2,
+        "https://www.nasa.gov/podcasts-and-audio/": 2,
+        "https://www.nasa.gov/nasa-blogs/": 2,
+        "https://www.nasa.gov/newsletters/": 2,
+        "https://www.nasa.gov/social-media/": 2,
+        "https://www.nasa.gov/news/media-contacts/": 2,
+        "https://www.nasa.gov/events/": 2,
+        "https://www.nasa.gov/event-type/launch-schedule/": 2,
+        "https://www.nasa.gov/nasa-virtual-guest-program/": 2,
+        "https://www.nasa.gov/multimedia/": 2,
+        "https://plus.nasa.gov/": 2,
+        "https://www.nasa.gov/images/": 2,
+        "https://www.nasa.gov/live/": 2,
+        "https://science.nasa.gov/3d-resources/": 2,
+        "https://science.nasa.gov/earth/": 2
+      },
+      "last_seen": 1795460780
+    },
+    "пітон": {
+      "count": 4,
+      "result_urls": {},
+      "last_seen": 1795460766
+    },
+    "python": {
+      "count": 1,
+      "result_urls": {
+        "https://www.python.org/": 1,
+        "https://www.python.org/psf/": 1,
+        "https://docs.python.org": 1,
+        "https://pypi.org/": 1,
+        "https://www.python.org/jobs/": 1,
+        "https://www.python.org/community/": 1,
+        "https://www.python.org/community/irc/": 1,
+        "https://www.python.org/about/": 1,
+        "https://www.python.org/about/apps/": 1,
+        "https://www.python.org/about/quotes/": 1,
+        "https://www.python.org/about/gettingstarted/": 1,
+        "https://www.python.org/about/help/": 1,
+        "https://www.python.org/downloads/": 1,
+        "https://www.python.org/downloads/source/": 1,
+        "https://www.python.org/downloads/windows/": 1,
+        "https://www.python.org/downloads/macos/": 1,
+        "https://www.python.org/downloads/android/": 1,
+        "https://www.python.org/downloads/ios/": 1,
+        "https://www.python.org/download/other/": 1,
+        "https://docs.python.org/3/license.html": 1
+      },
+      "last_seen": 1795460434
+    },
+    "пуьон": {
+      "count": 1,
+      "last_seen": 1795460751,
+      "result_urls": {
+        "https://docs.python.org/3/license.html": 1,
+        "https://pycon.blogspot.com/": 1,
+        "https://www.rfc-editor.org/authors/rfc-independent-submissions/": 1,
+        "https://donate.python.org/": 1,
+        "https://www.python.org/doc/av": 1,
+        "https://www.python.org/community/lists/": 1,
+        "https://www.python.org/psf/conduct/": 1,
+        "https://www.wxpython.org/": 1,
+        "https://huggingface.co/docs/transformers/": 1,
+        "https://www.python.org/doc/av/": 1,
+        "https://www.mozilla.org/en-US/about/manifesto/": 1,
+        "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements": 1,
+        "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes": 1,
+        "https://github.com/orgs/mdn/discussions/739": 1,
+        "https://www.un.org/en/": 1,
+        "https://www.iab.org/": 1,
+        "https://www.rfc-editor.org/info/rfc10021/": 1
+      }
+    },
+    "пайтон": {
+      "count": 2,
+      "last_seen": 1795460873,
+      "result_urls": {}
+    },
+    "pyton": {
+      "count": 1,
+      "last_seen": 1795460886,
+      "result_urls": {
+        "https://www.python.org/": 1,
+        "https://www.python.org/psf/": 1,
+        "https://docs.python.org": 1,
+        "https://pypi.org/": 1,
+        "https://www.python.org/jobs/": 1,
+        "https://www.python.org/community/": 1,
+        "https://www.python.org/community/irc/": 1,
+        "https://www.python.org/about/": 1,
+        "https://www.python.org/about/apps/": 1,
+        "https://www.python.org/about/quotes/": 1,
+        "https://www.python.org/about/gettingstarted/": 1,
+        "https://www.python.org/about/help/": 1,
+        "https://www.python.org/downloads/": 1,
+        "https://www.python.org/downloads/source/": 1,
+        "https://www.python.org/downloads/windows/": 1,
+        "https://www.python.org/downloads/macos/": 1,
+        "https://www.python.org/downloads/android/": 1,
+        "https://www.python.org/downloads/ios/": 1,
+        "https://www.python.org/download/other/": 1,
+        "https://docs.python.org/3/license.html": 1
+      }
+    }
+  },
+  "relations": {},
+  "learned_words": {
+    "пуьон": {
+      "word": "upon",
+      "confidence": 0.75,
+      "frequency": 21,
+      "learned_at": 1795460751
+    },
+    "путон": {
+      "word": "pluto",
+      "confidence": 0.8,
+      "frequency": 38,
+      "learned_at": 1795460756
+    },
+    "pyton": {
+      "word": "python",
+      "confidence": 0.909,
+      "frequency": 3891,
+      "learned_at": 1795460886
+    }
+  }
+}
